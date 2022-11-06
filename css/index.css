@@ -1,12 +1,34 @@
-.header {
 
+header {
+    background-color: ffeede;
+} 
+
+h1 {
+    text-align: center;
 }
 
 #logo_main {
     text-align: center;
 }
 
+#description {
+    padding: 30px;
+}
+
+#activity-card {
+    padding: 30px;
+}
+
+
+
+
 .carousel-item {
     min-width: 100%;
     height: 100%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
 }
