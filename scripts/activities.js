@@ -1,5 +1,7 @@
 "use strict";
 
+window.onload = init;
+
 let categories = ["Adventures", "Arts & Crafts", "Museums", "Wine Tastings", "Other"];
 
 let activities = [
@@ -101,3 +103,50 @@ let activities = [
     }
 ];
 
+function init()
+{
+    fillDropdown1();
+    fillDropdown2();
+    fillDropdown3();
+    const selectBtn = document.getElementById("selectBtn");
+    selectBtn.onclick = selectBtnOnClick;
+}
+
+
+/* function fillDropdown1() //Category Select 
+{
+    const categorySelect = document.getElementByIdI("categorySelect");
+    let selectCatOption = document.createElement("option");
+    selectCatOption.value = "";
+    selectCatOption.textContent = "Select One . . .";
+    categorySelect.appendChild(selectCatOption);
+
+    let categoryLength = categories.length;
+    for (let i = 0; i < categoryLength; i++)
+    {
+        let newOption = document.createElement("option");
+        newOption.value = categories[i].id;
+        newOption.textContent = categories[i].category;
+
+        categorySelect.appendChild(newOption);
+    }
+}
+
+function fillDropdown2()
+{
+
+}
+ */
+
+function fillDropdown3(); // Ticket Number 
+{
+    let dropdown = document.getElementById("ticketNum")
+    for(let i = 1; i <= 10; i++)
+    {
+        let newOption = document.createElement("option");
+        newOption.value = i;
+        newOption.textContent = i;
+
+        dropdown.appendChild(newOption)        
+}
+}
