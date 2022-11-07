@@ -1,6 +1,7 @@
 
 
-h1 {
+h1, h3 {
+    padding: 10px;
     text-align: center;
 }
 
@@ -16,7 +17,9 @@ h1 {
     padding: 30px;
 }
 
-
+#fill-text {
+    padding: 30px;
+}
 
 
 .carousel-item {
