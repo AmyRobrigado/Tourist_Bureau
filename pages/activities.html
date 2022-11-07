@@ -87,7 +87,7 @@
         </div>
     </section>
     <div id="button">
-        <div class="container">
+        <div>
             <div class="d-flex justify-content-center mb-4">
                 <button type="button" class="btn btn-outline-primary btn-lg">Maps</button>
             </div>
@@ -95,6 +95,7 @@
     </div>
 
     <hr>
+    <!-- Select Options -->
     <div class="row">
         <div class="container-fluid">
             <h1>Buy a Ticket Now!</h1>
@@ -113,15 +114,6 @@
                         <select class="form-select" aria-label="Default select" id="activitySelect"></select>
                     </div>
                 </div>
-                <!-- Tickets -->
-                <div class="row mb-3">
-                    <label for="ticketNum" class="col-sm-2 col-form-label">Number of Tickets</label>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <select class="form-select" aria-label="Default select" id="ticketNum"></select>
-                        </div>
-                    </div>
-                </div>
                 <!-- Select Button -->
                 <div class="row mb-3">
                     <div class="col-sm-10 offset-sm-2">
@@ -130,6 +122,30 @@
                 </div>
             </form>
         </div>
+    </div>
+
+    <div class="container">
+        <form>
+            <!-- Email form -->
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <!-- Credit card form -->
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Credit Card</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center p-4">
+                    <button type="button" class="btn btn-primary">Purchase</button>
+                </div>
+
+            </div>
     </div>
 
     <script src="/scripts/activities.js"></script>

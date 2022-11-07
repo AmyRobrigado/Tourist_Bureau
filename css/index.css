@@ -39,3 +39,14 @@ label {
     height: 20vw;
     object-fit: cover;
 }
+
+.container {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 100px;
+    height: 200px;
+   
+    margin: 10px;
+    padding: 10px;
+}
