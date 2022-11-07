@@ -144,10 +144,10 @@ function fillDropdown2() // Activity Select
    for (let i = 0; i < activityLength; i++)
    {
     let newOption2 = document.createElement("option");
-    newOption2.value = activities[i].category;
+    newOption2.value = activities[i].id;
     newOption2.textContent = activities[i].name;
-    
-    activitySelect.appendChild(newOption2)
+
+    care
    }
 }
 
