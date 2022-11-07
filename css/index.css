@@ -21,6 +21,9 @@ h1, h3 {
     padding: 30px;
 }
 
+#activity-tickets {
+    padding: 50px;
+}
 
 .carousel-item {
     min-width: 100%;
