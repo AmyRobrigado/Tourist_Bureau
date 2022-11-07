@@ -106,16 +106,16 @@ let activities = [
 function init()
 {
     fillDropdown1();
-    fillDropdown2();
+    /* fillDropdown2(); */
     fillDropdown3();
-    const selectBtn = document.getElementById("selectBtn");
-    selectBtn.onclick = selectBtnOnClick;
+    /* const selectBtn = document.getElementById("selectBtn");
+    selectBtn.onclick = selectBtnOnClick; */
 }
 
 
-/* function fillDropdown1() //Category Select 
+function fillDropdown1() // Category Select 
 {
-    const categorySelect = document.getElementByIdI("categorySelect");
+    const categorySelect = document.getElementById("categorySelect");
     let selectCatOption = document.createElement("option");
     selectCatOption.value = "";
     selectCatOption.textContent = "Select One . . .";
@@ -124,21 +124,35 @@ function init()
     let categoryLength = categories.length;
     for (let i = 0; i < categoryLength; i++)
     {
-        let newOption = document.createElement("option");
-        newOption.value = categories[i].id;
-        newOption.textContent = categories[i].category;
+        let newOption1 = document.createElement("option");
+        newOption1.value = categories[i]; // (Item[i])- To call string-----------(.Item )- To call object
+        newOption1.textContent = categories[i];
 
-        categorySelect.appendChild(newOption);
+        categorySelect.appendChild(newOption1);
     }
 }
 
-function fillDropdown2()
+function fillDropdown2() // Activity Select 
 {
+   const activitySelect = document.getElementById("activitySelect");
+   let selectActOption = document.createElement("option");
+   selectActOption.value = "";
+   selectActOption.textContent = "Select One . . .";
+   activitySelect.appendChild(selectActOption);
 
+   let activityLength = activities.length;
+   for (let i = 0; i < activityLength; i++)
+   {
+    let newOption2 = document.createElement("option");
+    newOption2.value = activities[i].category;
+    newOption2.textContent = activities[i].name;
+    
+    activitySelect.appendChild(newOption2)
+   }
 }
- */
 
-function fillDropdown3(); // Ticket Number 
+
+function fillDropdown3() // Ticket Number 
 {
     let dropdown = document.getElementById("ticketNum")
     for(let i = 1; i <= 10; i++)

@@ -5,6 +5,10 @@ h1, h3 {
     text-align: center;
 }
 
+label {
+    text-align: end;
+}
+
 #logo_main {
     text-align: center;
 }
