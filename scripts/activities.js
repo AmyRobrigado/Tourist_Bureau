@@ -105,15 +105,15 @@ let activities = [
 
 function init()
 {
-    fillDropdown1();
-    /* fillDropdown2(); */
-    fillDropdown3();
+    dropdownCat();
+    dropdownAct();
+    dropdownNum();
     /* const selectBtn = document.getElementById("selectBtn");
     selectBtn.onclick = selectBtnOnClick; */
 }
 
 
-function fillDropdown1() // Category Select 
+function dropdownCat() // Category Select 
 {
     const categorySelect = document.getElementById("categorySelect");
     let selectCatOption = document.createElement("option");
@@ -132,8 +132,10 @@ function fillDropdown1() // Category Select
     }
 }
 
-function fillDropdown2() // Activity Select 
+function dropdownAct() // Activity Select 
 {
+    document.getElementById("activitySelect").style.display = "none";
+    document.getElementById("activeLabel").style.display = "none";
    const activitySelect = document.getElementById("activitySelect");
    let selectActOption = document.createElement("option");
    selectActOption.value = "";
@@ -143,16 +145,12 @@ function fillDropdown2() // Activity Select
    let activityLength = activities.length;
    for (let i = 0; i < activityLength; i++)
    {
-    let newOption2 = document.createElement("option");
-    newOption2.value = activities[i].id;
-    newOption2.textContent = activities[i].name;
-
-    care
+    
    }
 }
 
 
-function fillDropdown3() // Ticket Number 
+function dropdownNum() // Ticket Number 
 {
     let dropdown = document.getElementById("ticketNum")
     for(let i = 1; i <= 10; i++)
